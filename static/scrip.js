@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     async function fetchTasks() {
-        const response = await fetch('/tasks');
+git config         const response = await fetch('/tasks');
         if (response.ok) {
             const tasks = await response.json();
             tasks.forEach(addTaskToUI);
