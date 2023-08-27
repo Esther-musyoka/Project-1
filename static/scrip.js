@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         deleteBtn.addEventListener('click', async () => {
             const taskId = deleteBtn.getAttribute('data-id');
             const response = await fetch(`/tasks/${taskId}`, {
-                method: 'DELETE',
+                method: 'DELETE'
             });
 
             if (response.ok) {
