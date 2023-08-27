@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
             addTaskToUI(task);
             taskForm.reset();
         } else {
-            console.error('Failed to add task');
+            console.error("Your task couldn't. Do you mind retrying?");
         }
     });
 
