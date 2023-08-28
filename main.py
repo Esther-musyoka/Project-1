@@ -5,7 +5,7 @@ from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm.exc import*
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///tasks.db'  # Update with your DB URI
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///tasks.db' 
 db = SQLAlchemy(app)
 
 class Task(db.Model):
@@ -74,5 +74,5 @@ def delete_task(task_id):
 
 if __name__ == '__main__':
     with app.app_context():
-        db.create_all()  # Create the database tables
+        db.create_all()  
     app.run()
